@@ -1,0 +1,144 @@
+*{
+      margin: 0;
+      padding: 0;
+}
+html{
+      font-size: 100%;
+}
+body{
+      box-sizing: border-box;
+}
+#navigation{
+      background-color: #252324;
+      width: 100%;
+      height: 120px;
+      box-shadow: 1px 2px 0px #EF233C;
+      z-index: 998;
+      
+}
+.wrapper{
+      width: 1260px;
+      margin: 0 auto;
+      display: flex;
+}
+.logo{
+      width: 400px;
+}
+.logo img{
+      width: 220px;
+      height: 126px;
+      margin: 0 auto;
+}
+.menu{
+      justify-content: space-between;
+      width: 800px;
+      padding: 40px;
+}
+.manu ul{
+      list-style: none;
+      position: relative;
+}
+.menu ul li{
+      float:left;
+      padding: 10px 20px;
+      display: inline-block;
+      position: relative;
+      width: 100px;
+      margin-right: 1px solid #ffff;
+}
+.menu ul li a{
+      text-decoration: none;
+      color: #fff;
+      font-size: 25px;
+}
+#section_1{
+      background-color: #1C2852;
+      width: 100%;
+      height: 500px;
+      z-index: -1;
+      margin-top: 2px;
+}
+#section_1 .sidesec{
+      width: 280px;
+      height: 320px;
+      background-color: #EF233C;
+      box-shadow: 0px 5px 2px #000;
+      border-bottom-right-radius: 50%;
+      border-bottom-left-radius: 50%;
+      position: relative;
+}
+
+.sideimg img{
+      width: 180px;
+      height: 182px;
+      position: absolute;
+      margin-left: 50px;
+      margin-top: 100px;
+      border-radius: 50%;
+      border: 2px solid #1C2852;
+      padding: 2px;
+      
+
+}
+#section_1 h2{
+      font-size: 70px;
+      margin-left: 150px;
+      color: #fff;
+      text-transform: uppercase;
+}
+#section_1 p{
+      font-size: 90px;
+      text-align: left;
+      color: aqua;
+      font-style: oblique;
+      position: absolute;
+}
+.btn{
+      margin: 0;
+      padding: 0;
+      position: absolute;
+}
+#section_1 .btn1:hover{
+      color: #fff;
+      background: #1C2852;
+      transition: .3s;
+      border: 3px solid #EF233C;
+      color: #EF233C;
+}
+#section_1 .btn1{
+      padding: 15px 20px;
+      font-size: 20px;
+      margin-top: 300px;
+      cursor: pointer;
+      margin-right: 130px;
+      background-color: #EF233C;
+      border: 3px solid #1C2852;
+      outline: 0;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      position: relative;
+      margin-left: 420px;
+      color: #fff;
+}
+#section_1 .btn2{
+      padding: 15px 20px;
+      font-size: 20px;
+      margin-top: 300px;
+      cursor: pointer;
+      margin-left: 50px;
+      background-color: #1C2852;
+      border: 3px solid #EF233C;
+      outline: 0;
+      border-bottom-right-radius: 20px;
+      border-top-left-radius: 20px;
+      position: relative;
+      color: #EF233C;
+}
+#section_1 .btn2:hover{
+      color: #fff;
+      background: #EF233C;
+      transition: .3s;
+      border: 3px solid #1C2852;
+      color: #fff;
+
+}
