@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Federant&family=Gemunu+Libre:wght@200;300;700;800&family=Inconsolata:wght@300&display=swap');
+/*font family
+font-family: 'Dosis', sans-serif;
+font-family: 'Federant', cursive;
+font-family: 'Gemunu Libre', sans-serif;
+font-family: 'Inconsolata', monospace;
+*/
 *{
       margin: 0;
       padding: 0;
@@ -9,12 +16,13 @@ body{
       box-sizing: border-box;
 }
 #navigation{
-      background-color: #252324;
+      background-color: #1C2852;
       width: 100%;
-      height: 120px;
+      height: 90px;
       box-shadow: 1px 2px 0px #EF233C;
+      position:sticky;
+      top: 0;
       z-index: 998;
-      
 }
 .wrapper{
       width: 1260px;
@@ -22,24 +30,31 @@ body{
       display: flex;
 }
 .logo{
-      width: 400px;
+      width: 220px;
 }
 .logo img{
-      width: 220px;
-      height: 126px;
-      margin: 0 auto;
+      width: 120px;
+      height: 84px;
+      left: 0;
+      top: 0;
+      
+}
+.logo .rotation{
+      transform: rotate(180deg);
 }
 .menu{
       justify-content: space-between;
       width: 800px;
-      padding: 40px;
+      padding: 10px;
+      display: block;
+      margin-left: 240px;
 }
 .manu ul{
       list-style: none;
       position: relative;
+      float: right;
 }
 .menu ul li{
-      float:left;
       padding: 10px 20px;
       display: inline-block;
       position: relative;
@@ -51,12 +66,13 @@ body{
       color: #fff;
       font-size: 25px;
 }
+/*--------------------------Hero section-------------------*/
 #section_1{
-      background-color: #1C2852;
       width: 100%;
-      height: 500px;
-      z-index: -1;
+      height: 420px;
       margin-top: 2px;
+      background-color: #1C2852;
+      position: relative;
 }
 #section_1 .sidesec{
       width: 280px;
@@ -72,10 +88,10 @@ body{
       width: 180px;
       height: 182px;
       position: absolute;
-      margin-left: 50px;
+      margin-left: 48px;
       margin-top: 100px;
       border-radius: 50%;
-      border: 2px solid #1C2852;
+      border: 4px solid #fff;
       padding: 2px;
       
 
@@ -140,5 +156,149 @@ body{
       transition: .3s;
       border: 3px solid #1C2852;
       color: #fff;
+}
+/*-------------------Social section--------------------*/
+.socialsec{
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      margin-left: 420px;
+}
+.socialsec li{
+      list-style: none;
+      float: left;
+      padding: 20px;
+      transform: translateY(-50%);
+}
+.socialsec li a{
+      font-size: 30px;
+      background-color: #161f41;
+      border-radius: 50%;
+      text-align: center;
+      padding: 14px;
+      color: #9e9d9d;
+      position: relative;
+      
+}
+.socialsec li a::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      background-color: aqua;
+      top: 0;
+      left: 0;
+      position: absolute;
+      border-radius: 50%;
+      z-index: -1;
+      transform: scale(.9);
+      transition: .5s;
+}
+.socialsec li a:hover:before{
+      transform: scale(1.1);
+      box-shadow: 0 0 20px aqua;
+}
+.socialsec li a:hover{
+      color: aqua;
+      text-shadow: 0 0 5px aqua;
+      transition: .5s;  
+}
+/*--------------Bio-Section------------------*/
+#section3{
+      background-color: rgba(36, 47, 87, 0.3);
+}
+.page-about{
+      display: flex;
+      height: 420px;
+      
+}
+.container{
+      display: flex;
+}
+.imagesection{
+      margin-left: 50px;
+}
+.row{
+      width: 110px;
+      height: 190px;
+      background-color:rgba(36, 47, 87, 0.1);
+      border: 5px solid #EF233C;
+      margin-top: 35px;
+      position: absolute;
+      margin-left: 30px;
+}
+.img-place img{
+      width: 130px;
+      height: 192px;
+      margin-top: 50px;
+      position: relative;
+}
+.fadeInRight{
+      width: 800px;
+      margin-top: 50px;
+      margin-left: 120px;
+}
+.Righteous{
+      font-size: 35px;
+      font-family: 'Dosis', sans-serif;
+      color: #03A9F4;
+      font-weight: 300;
+      margin-bottom: 5px;
+}
+.fadeInRight h5{
+      color: #EF233C;
+      font-family:'Righteous',cursive;
+      font-size: 25px;
+      margin-bottom: 5px;
+}
+.Bio-text{
+      width: 450px;
+      color: #000;
+      font-family:'Inconsolata', monospace;
+      margin-bottom: 5px;
+}
+.bio-list li{
+      list-style: none;
+      font-size: 20px;
+      font-family: 'Gemunu Libre', sans-serif;
+      margin-bottom: 10px;
+}
+.btn-btn{
+      width: 120px;
+      height: 40px;
+      outline: none;
+      border: 0;
+      color: #9e9d9d;
+      background-color: #161f41;
+      left: 0;
+      font-size: 20px;
+      font-family: 'Gemunu Libre', sans-serif;
+      font-weight: 700;
+      border: 2px solid #EF233C;
+      box-shadow: 0 0 10px #EF233C;
+      text-shadow: 0 0 10px #EF233C;
+      cursor: pointer;
 
 }
+.btn-btn::before{
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      box-shadow: 0 0 20px #00ffff;
+      transform: scale(.9);
+      transition: .9s;   
+}
+.btn-btn:hover::before{
+      transition: .9s;
+      transform: scale(1.1);
+}
+.btn-btn:hover{
+      box-shadow: 0 0 20px #00ffff;
+      text-shadow: 0 0 20px #00ffff;
+      background-color: #EF233C;
+      color: #fff;
+      border: 2px solid #00ffff;
+
+}
+
