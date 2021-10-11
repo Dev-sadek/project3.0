@@ -18,7 +18,7 @@ body{
 #navigation{
       background-color: #1C2852;
       width: 100%;
-      height: 90px;
+      line-height: 20px;
       box-shadow: 1px 2px 0px #EF233C;
       position:sticky;
       top: 0;
@@ -34,20 +34,20 @@ body{
 }
 .logo img{
       width: 120px;
-      height: 84px;
+      height: 49px;
       left: 0;
       top: 0;
+      padding: 15px 0px;
       
 }
-.logo .rotation{
-      transform: rotate(180deg);
-}
+
 .menu{
       justify-content: space-between;
       width: 800px;
       padding: 10px;
       display: block;
       margin-left: 240px;
+      line-height: 50px;
 }
 .manu ul{
       list-style: none;
@@ -55,16 +55,31 @@ body{
       float: right;
 }
 .menu ul li{
-      padding: 10px 20px;
-      display: inline-block;
       position: relative;
       width: 100px;
-      margin-right: 1px solid #ffff;
+      display: inline-block;
+      text-align: center;
+      transform: skew(8deg);
+      background: #161f41;
+      border-radius: 3px;
+      margin-top: 8px;
+      border: none;
+}
+.menu ul li:hover{
+      background: #EF233C;
+      line-height: 50px;
+      cursor: pointer;
+      transform: skew(8deg);
+      border: none;
+
 }
 .menu ul li a{
       text-decoration: none;
       color: #fff;
-      font-size: 25px;
+      font-size: 15px;
+      font-family: 'Play', sans-serif;
+      font-weight: 100;
+      
 }
 /*--------------------------Hero section-------------------*/
 #section_1{
@@ -97,17 +112,18 @@ body{
 
 }
 #section_1 h2{
-      font-size: 70px;
+      font-size: 60px;
       margin-left: 150px;
       color: #fff;
       text-transform: uppercase;
+      font-family: 'Saira Stencil One', cursive;
 }
 #section_1 p{
-      font-size: 90px;
+      font-size: 50px;
       text-align: left;
-      color: aqua;
-      font-style: oblique;
+      color: #03A9F4;
       position: absolute;
+      font-family: 'Keania One', cursive;
 }
 .btn{
       margin: 0;
@@ -135,6 +151,7 @@ body{
       position: relative;
       margin-left: 420px;
       color: #fff;
+      font-family: 'Lobster', cursive;
 }
 #section_1 .btn2{
       padding: 15px 20px;
@@ -149,6 +166,7 @@ body{
       border-top-left-radius: 20px;
       position: relative;
       color: #EF233C;
+      font-family: 'Lobster', cursive;
 }
 #section_1 .btn2:hover{
       color: #fff;
@@ -204,7 +222,7 @@ body{
 }
 /*--------------Bio-Section------------------*/
 #section3{
-      background-color: rgba(36, 47, 87, 0.3);
+      background-color: azure;
 }
 .page-about{
       display: flex;
@@ -299,6 +317,296 @@ body{
       background-color: #EF233C;
       color: #fff;
       border: 2px solid #00ffff;
+}
+/*---------------skills section----------------------*/
+.skillsarea{
+      background-color: azure;
+      height: 320px;
+}
+.myskills h2{
+      text-align: center;
+      color: #fff;
+      font-size: 25px;
+      font-family: 'Inconsolata', monospace;
+      padding: 10px;
+      margin: 0 auto;
+      position: relative;
+}
+.myskills{
+      width: 1260px;
+      margin: 0 auto;
 
 }
-
+.myskills h2 span{
+      background-color: #EF233C;
+      position: relative;
+      padding: 5px 15px;
+      display: inline-block;
+      border:2px solid #03A9F4;
+      border-radius: 10px;
+      box-shadow: 2px 2px 2px #000;
+      text-transform: uppercase;
+}
+.myskills h2::before{
+      content: "";
+      background-color: #EF233C;
+      transform: translateY(-50%);
+      left: 0;
+      top: 50%;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      width: 700px;
+      margin-left: 300px;
+}
+.skills-container{
+      width: 660px;
+      margin: 30px auto;
+      left: 0;
+      display: flex;
+}
+.skills-container li{
+      list-style: none;
+      margin: 20px 8px;
+}
+.skills-container li:first-child{
+      margin-left: 0;
+}
+.skills-container li h3{
+      color: #000;
+      background: #03A9F4;
+      padding:5px;
+      width: 70px;
+      border-bottom-right-radius: 50px;
+      margin-bottom: 5px;
+      font-size: 15px;
+      font-family: 'Gemunu Libre', sans-serif;
+      box-shadow: 4px 1px #000;
+}
+.bar{
+      background: #161f41;
+      line-height: 5px;
+      display: block;
+      padding: 0px 0px;
+      width: 220px;
+      border: 1px solid rgb(28, 40, 82,.5);
+      border-radius: 3px;
+      box-shadow: 0 0 5px #00ffff;
+      overflow: hidden;
+      margin-top: 30px;
+}
+.bar span{
+      background: #00ffff;
+      float: left;
+      height: 10px;
+}
+.HTMl{
+      width: 95%;
+      border-radius: 3px;
+      animation: HTMl 3s ;
+}
+.CSS{
+      width: 82%;
+      border-radius: 3px;
+      animation: CSS 3s ;
+}
+.js{
+      width: 30%;
+      border-radius: 3px;
+      animation: js 3s ;
+}
+@keyframes HTMl{
+      0%{
+            width:0%;
+      }
+      100%{
+            width: 95%;
+      }
+}
+@keyframes CSS{
+      0%{
+            width:0%;
+      }
+      100%{
+            width: 82%;
+      }
+}
+@keyframes js{
+      0%{
+            width:0%;
+      }
+      100%{
+            width: 30%;
+      }
+}
+.flex-container{
+      display: flex;
+      height: 500px;
+      margin-left: 20px;
+      
+ }
+ .flex-container .cont1{
+      background: #fff;
+      width: 320px;
+      height: 420px;
+      margin: 20px 30px;
+      position: relative;
+      box-shadow: 5px 5px 15px #000;
+      transition: all 2s;
+ }
+ .flex-container .cont1:hover{
+      margin-top: 50px;
+ }
+ .flex-container .topbox{
+      background: rgba(0, 0, 0, .5);
+      width: 130px;
+      height: 130px;
+      line-height: 130px;
+      border-radius: 50%;
+      text-align: center;
+      margin-left: 100px;
+      transform: translateY(-50%);
+      color: #fff;
+      font-size: 25px;
+      font-family: 'Play', sans-serif;
+      font-weight: 900;
+      position: absolute;
+      cursor: pointer;
+      display: fixed;
+ }
+ .flex-container .topbox:hover{
+      background: #000;
+      width: 130px;
+      height: 130px;
+      line-height: 130px;
+      border-radius: 50%;
+ }
+ .flex-container p{
+      font-size: 20px;
+      padding: 20px 25px;
+      color: black;
+      position: relative;
+      margin-top: 50px;
+      font-family: 'Play', sans-serif;
+      cursor: pointer;
+ }
+ .flex-container b{
+       margin-bottom: 20px;
+       padding: 20px 0px;
+       color: #EF233C;
+ }
+ .flex-btn{
+       margin-left: 78px;
+       margin-top: 120px;
+       outline: 0;
+       border: 0;
+       width: 180px;
+       height: 50px;
+       background: #EF233C;
+       padding: 10px;
+       font-size: 20px;
+       font-family: 'Courier New', Courier, monospace;
+       cursor: pointer;
+       color: #fff;
+ }
+ .flex-btn:hover{
+       background: #03A9F4;
+       color: #000;
+ }
+ .contractarea{
+       background: #EF233C;
+       width: 100%;
+       height: 350px;
+ }
+ .fromsection{
+     margin-left: 200px;
+}
+.fromsection h4{
+     color: #fff;
+     font-size: 30px;
+     padding: 15px;
+     margin-left: 150px;
+     font-family: 'Courier New', Courier, monospace;
+}
+.fromsection input{
+     margin-top: 15px;
+     width: 320px;
+     height: 20px;
+     border: 0;
+     background-color:rgba(126, 16, 29, 0.7);
+     padding: 20px;
+     border-radius: 3px;
+     font-size: 20px;
+     color: #000;
+     border: 0;
+     outline: 0;
+     
+}
+.messages input{
+     width: 685px;
+     height: 80px;
+     margin-top: 10px;
+     margin-bottom: 20px;
+     border: 0;
+     outline: 0;
+}
+::placeholder{
+     color: #000;
+     font-size: 15px;
+     font-family:'Roboto', sans-serif;
+     font-style: oblique;
+}
+.btn3{
+width: 120px;
+margin-left: 280px;
+margin-bottom: 20px;
+height: 40px;
+background-color: #04b2f7;
+text-align: center;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 25px;
+font-family: 'Courier New', Courier, monospace;
+color: #fff;
+}
+.btn3:hover{
+     background-color: #caf7f7;
+     color: #000;
+     transition: .9s;
+}
+/*------------footer section----------*/
+#footersec{
+      background-color: #000;
+      padding: 40px 0;
+      width: 100%;
+      height: 150px;
+ 
+ }
+ /*.socialsec{
+      color: #fff;
+      text-align: center;
+      font-size: 35px;
+      padding: 20px;
+ 
+ }
+ .socialsec i{
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      background-color: #005FCC;
+      border-radius: 10px;
+      cursor: pointer;
+ }
+ 
+ .socialsec i:hover{
+      background-color: #04b2f7;
+ }*/
+ .textcont{
+      color: #fff;
+      font-family: 'Play', sans-serif;
+      font-weight: 100;
+      margin-top: 80px;
+      text-align: center;
+      transform: scale(.9s);
+ }
